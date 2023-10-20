@@ -1,0 +1,160 @@
+/* variables */
+:root {
+  --bg-color: #101113;
+  --text-color: #f8f9fa;
+  --space: 8px;
+  --primary: #1864ab;
+  --primary-hover: #1c7ed6;
+}
+
+/* html & body */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Hack", monospace;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 800;
+}
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+p {
+  font-size: 16px;
+  font-weight: 500;
+}
+small {
+  font-size: 14px;
+}
+mark {
+  background-color: #fab005;
+}
+a,
+a:visited {
+  color: var(--primary);
+}
+
+/* card */
+article {
+  padding: var(--space);
+  background-color: #1a1b1e;
+  border-radius: calc(var(--space) / 2);
+  overflow: hidden;
+}
+article > header {
+  background-color: #25262b;
+  margin: calc(var(--space) * -1);
+  padding: var(--space);
+}
+article.row header {
+  margin-right: 0;
+}
+article.col header {
+  margin-bottom: 0;
+}
+
+/* input & select */
+input,
+select {
+  padding: calc(var(--space) / 2);
+  border-radius: calc(var(--space) / 4);
+  background-color: #141517;
+  color: var(--text-color);
+  border: none;
+  outline: none;
+}
+input:focus,
+select:focus {
+  outline: 2px solid #343a40;
+}
+
+/* button */
+button {
+  cursor: pointer;
+  padding: calc(var(--space) / 2);
+  border: none;
+  outline: none;
+  border-radius: calc(var(--space) / 4);
+  color: var(--text-color);
+  background-color: var(--primary);
+}
+button:focus {
+  outline: 2px solid #343a40;
+}
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* nav */
+nav {
+  padding: 0 calc(var(--space) * 2);
+  display: flex;
+  align-items: center;
+  gap: var(--space);
+  background-color: #1a1b1e;
+}
+nav a,
+nav a:visited {
+  display: flex;
+  align-items: center;
+  padding: var(--space);
+  text-decoration: none;
+  color: var(--text-color);
+}
+nav a.active {
+  background-color: #1864ab;
+}
+
+/* flex */
+.gap {
+  gap: var(--space);
+}
+/* flex row */
+.row {
+  display: flex;
+  flex-direction: row;
+}
+.row.x-center {
+  justify-content: center;
+}
+.row.y-center {
+  align-items: center;
+}
+/* flex column */
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.col.x-center {
+  align-items: center;
+}
+.col.y-center {
+  justify-content: center;
+}
