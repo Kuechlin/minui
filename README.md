@@ -1,5 +1,14 @@
 # minui
 
+## Install
+
+```html
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/Kuechlin/minui/styles.css"
+/>
+```
+
 ## Components
 
 ### Nav
